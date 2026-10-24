@@ -1,0 +1,9 @@
+# Dependencies and inspection artifacts
+.taste-skill/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Raw intermediate extracted figures (large dumps ~1GB)
+assets/paper_extracted/
