@@ -3,489 +3,170 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>朱军 · Stephen Zhu | 学术主页 · Academic Portfolio</title>
-  <meta name="description" content="朱军（Stephen Zhu）的学术主页：西安电子科技大学 & 鹏城实验室联合培养博士研究生。研究聚焦毫米波雷达 SLAM、小尺度无线电地图与三维场景重建。" />
-  
-  <!-- Fontshare General Sans CDN -->
-  <link rel="preconnect" href="https://api.fontshare.com" />
-  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
-  
+  <title>朱军 · Stephen Zhu</title>
+  <meta name="description" content="朱军（Stephen Zhu），西安电子科技大学与鹏城实验室联合培养博士研究生。研究方向包括毫米波雷达 SLAM、无线定位与三维场景重建。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
   <link rel="icon" href="./favicon.svg" />
-  <script defer src="./script.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到正文</a>
 
-  <!-- Site Header & Board Nav -->
   <header class="site-header">
-    <div class="page-wrap">
-      <nav class="nav-board" aria-label="主导航">
-        <a href="#hero" class="nav-brand" aria-label="朱军学术主页">
-          <span>朱军 · Stephen Zhu</span>
-          <span class="brand-badge">西电 & 鹏城</span>
-        </a>
-        <div class="nav-links">
-          <a href="#research" class="nav-link">研究方向</a>
-          <a href="#work" class="nav-link">论文与项目</a>
-          <a href="#instrument" class="nav-link">误差补偿实验</a>
-          <a href="#journey" class="nav-link">个人经历</a>
-          <a href="#contact" class="nav-link">联系交流</a>
-        </div>
-        <a href="#contact" class="nav-action">
-          <span>邮件联系</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </nav>
-    </div>
+    <nav class="page-wrap site-nav" aria-label="主导航">
+      <a href="#hero">首页</a>
+      <a href="#work">论文</a>
+      <a href="#journey">经历</a>
+      <a href="#contact">联系</a>
+    </nav>
   </header>
 
-  <main>
-    <!-- Hero Section: Two-by-Two Board -->
-    <section class="section hero-section" id="hero" aria-label="主页导览">
-      <div class="page-wrap">
-        <div class="hero-board">
-          
-          <!-- Tile 1: Top-Left Headline & Bio -->
-          <article class="tile-headline fade-up-item">
-            <div class="hero-title-group">
-              <h1>在未知中定位，在现实中构建</h1>
-              <p class="hero-standfirst">
-                我是朱军（Stephen Zhu），西安电子科技大学与鹏城实验室联合培养博士研究生。我的研究聚焦机器如何在未知环境中自主定位与感知：从毫米波雷达 SLAM、无线电地图构建，到三维场景重建。
-              </p>
-              <div class="hero-tags-row">
-                <span class="hero-tag">毫米波雷达 SLAM</span>
-                <span class="hero-tag">无线电地图定位</span>
-                <span class="hero-tag">三维场景重建</span>
-                <span class="hero-tag">广东 · 深圳</span>
-              </div>
-            </div>
-            
-            <div class="hero-actions">
-              <a href="#work" class="btn-primary">
-                <span>浏览论文成果</span>
-                <span aria-hidden="true">↓</span>
-              </a>
-              <a href="#instrument" class="btn-secondary">
-                <span>进入交互观测仪</span>
-                <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Tile 2: Top-Right Portrait Tile with User's Photo -->
-          <figure class="tile-portrait fade-up-item delay-1">
-            <div class="tile-portrait-media shutter-reveal">
-              <img src="./11 报名上传02-★教师资格证报名★-白底-小于200K.jpg" alt="朱军（Stephen Zhu）的个人照片" width="295" height="413" /> <!-- taste-skill-ignore -->
-            </div>
-            <figcaption class="portrait-caption">
-              <span>朱军（Stephen Zhu）· 西安电子科技大学与鹏城实验室联合培养博士研究生</span>
-            </figcaption>
-          </figure>
-
-          <!-- Tile 3: Bottom-Left Key Findings & Stats Split -->
-          <div class="tile-split fade-up-item delay-2">
-            <div class="tile-stat-dark">
-              <p class="stat-figure">−49%</p>
-              <p class="stat-label">IEEE TIM 2025 提出 CEEC-CSM 方法，将坐标变换引起的累积定位误差降低约 49%。</p>
-            </div>
-            <div class="tile-stat-accent">
-              <p class="stat-motto">IEEE TIM · Q1</p>
-              <p class="stat-motto-sub">IF 5.6 · 承楠教授（西电）与杨婷婷教授（鹏城）联合指导</p>
-            </div>
+  <main id="main">
+    <section class="profile-section" id="hero" aria-labelledby="profile-title">
+      <div class="page-wrap profile">
+        <img class="portrait" src="./portrait.jpg" alt="朱军（Stephen Zhu）" width="295" height="413" fetchpriority="high" />
+        <div class="profile-body">
+          <h1 id="profile-title" lang="en">Hello, I'm Stephen Zhu</h1>
+          <p>我是朱军，目前是西安电子科技大学与鹏城实验室联合培养博士研究生，导师为承楠教授与杨婷婷教授。</p>
+          <p>我的研究聚焦自主定位与空间感知，包括毫米波雷达 SLAM 的观测误差与坐标变换补偿、小尺度无线电地图，以及多传感器三维场景重建。</p>
+          <div class="profile-links" aria-label="个人链接">
+            <a href="mailto:stephenzhu17@gmail.com">Email</a>
+            <a href="https://github.com/Er-Ding" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#journey">教育经历</a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Tile 4: Bottom-Right Sensor Motion Video Tile -->
-          <article class="tile-video fade-up-item delay-3">
-            <video autoplay loop muted playsinline poster="./assets/paper-tim-trajectory.png">
-              <source src="./assets/radar-loop.mp4" type="video/mp4" />
-            </video>
-            <div class="video-overlay-bar">
-              <span><strong>空间感知观测</strong> · MMW Radar Scan</span>
-              <span>实时方位角扫描与多径探测</span>
+    <section class="highlights-section" id="research" aria-labelledby="highlights-title">
+      <div class="page-wrap">
+        <h2 id="highlights-title" lang="en">Highlights</h2>
+        <div class="highlights-grid">
+          <a class="highlight" href="#paper-radiomap">
+            <div class="highlight-media">
+              <img src="./assets/paper-iccc-radiomap.png" alt="由 RSS、ToA、AoA 和 EoA 组成的小尺度无线电地图" width="1400" height="1120" loading="lazy" />
             </div>
-          </article>
+            <div class="highlight-body">
+              <h3>非视距无线定位</h3>
+              <p>用小尺度无线电地图描述复杂环境中的传播特征。</p>
+            </div>
+          </a>
+
+          <a class="highlight" href="#paper-radar">
+            <div class="highlight-media">
+              <img src="./assets/paper-tim-fig15.png" alt="TIM 论文 Fig. 15：CEEC-CSM 在场景 D 侧视观测下的雷达建图与卫星影像对照" width="1506" height="1134" loading="lazy" />
+            </div>
+            <div class="highlight-body">
+              <h3>雷达 SLAM 误差补偿</h3>
+              <p>分析观测偏差与坐标变换造成的累积定位误差。</p>
+            </div>
+          </a>
 
         </div>
       </div>
     </section>
 
-    <!-- Section 1: Research Pillars (Title, Note, Facts Row) -->
-    <section class="section section-tight" id="research" aria-label="研究方向">
+    <section class="content-section" id="work" aria-labelledby="publications-title">
       <div class="page-wrap">
-        <header class="section-header-split fade-up-item">
-          <h2>我在研究什么</h2>
-          <p>
-            定位不只是坐标读数，更是机器持续理解复杂现实世界的方式。我长期关注非视距遮挡、坐标系变换误差与大视场环境构图等核心问题。
-          </p>
-        </header>
+        <h2 id="publications-title" lang="en">Publications</h2>
+        <div class="publication-list">
+          <article class="publication" id="paper-radiomap" aria-labelledby="radiomap-title">
+            <a class="publication-image" href="https://ieeexplore.ieee.org/document/11680237" target="_blank" rel="noopener noreferrer" aria-label="阅读非视距无线定位论文">
+              <img src="./assets/paper-iccc-radiomap.png" alt="小尺度无线电地图的四种特征层" width="1400" height="1120" loading="lazy" />
+            </a>
+            <div class="publication-body">
+              <h3 id="radiomap-title" lang="en"><a href="https://ieeexplore.ieee.org/document/11680237" target="_blank" rel="noopener noreferrer">Small-Scale Radio Map-Based NLoS Localization</a></h3>
+              <p class="publication-authorship">朱军 · 学生第一作者</p>
+              <p class="publication-venue" lang="en">IEEE/CIC ICCC, 2026</p>
+              <p>基于射线追踪构建融合到达角、仰角、时延与接收信号强度的无线电地图，结合 KNN 特征匹配研究城市峡谷中的非视距定位。</p>
+              <div class="publication-links">
+                <a href="https://ieeexplore.ieee.org/document/11680237" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="paper-details">
+                <summary>查看特征消融实验图</summary>
+                <figure>
+                  <img src="./assets/paper-iccc-cdf.png" alt="不同无线电地图特征组合的定位误差累积分布对比" loading="lazy" />
+                  <figcaption>不同特征组合的定位误差分布。</figcaption>
+                </figure>
+              </details>
+            </div>
+          </article>
 
-        <div class="pillars-grid">
-          <article class="pillar-lead fade-up-item">
+          <article class="publication" id="paper-radar" aria-labelledby="radar-title">
+            <a class="publication-image" href="./assets/paper-tim-fig15.png" target="_blank" rel="noopener noreferrer" aria-label="查看 TIM 论文 Fig. 15 原图">
+              <img src="./assets/paper-tim-fig15.png" alt="TIM 论文 Fig. 15：CEEC-CSM 在场景 D 侧视观测下的雷达建图与卫星影像对照" width="1506" height="1134" loading="lazy" />
+            </a>
+            <div class="publication-body">
+              <h3 id="radar-title" lang="en"><a href="https://doi.org/10.1109/TIM.2025.3553241" target="_blank" rel="noopener noreferrer">Compensation for Positional Errors in MMW Radar SLAM Caused by Observation Deviations and Coordinate System Transformation</a></h3>
+              <p class="publication-authorship">朱军 · 学生第一作者</p>
+              <p class="publication-venue" lang="en">IEEE Transactions on Instrumentation and Measurement, Vol. 74, 2025</p>
+              <p>分析非线性坐标变换下的观测误差传播与累积机理，提出累积误差期望补偿方法 CEEC-CSM，并通过实测轨迹对比评估补偿效果。配图为论文 Fig. 15，展示场景 D 侧视观测下的雷达建图结果及卫星影像对照。</p>
+              <div class="publication-links">
+                <a href="https://doi.org/10.1109/TIM.2025.3553241" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="paper-details" id="instrument">
+                <summary>查看坐标变换误差分析图</summary>
+                <figure>
+                  <img src="./assets/paper-tim-error-manifold.png" alt="毫米波雷达坐标变换引起的 X 轴与 Y 轴观测误差流形" width="1744" height="433" loading="lazy" />
+                  <figcaption>坐标变换下的观测误差分布分析。</figcaption>
+                </figure>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="journey" aria-labelledby="education-title">
+      <div class="page-wrap">
+        <h2 id="education-title" lang="en">Education</h2>
+        <div class="education-list">
+          <article class="education-entry">
+            <p class="education-date">2025–至今</p>
             <div>
-              <h3>SLAM · 定位与建图</h3>
-              <p>聚焦移动智能体在未知环境中的同步定位与建图，探究毫米波雷达观测偏差与非线性坐标变换对累积误差的影响机理，提出闭式期望误差补偿理论。实测降低误差约 49%。</p>
+              <h3>西安电子科技大学 &amp; 鹏城实验室</h3>
+              <p>联合培养博士研究生 · 信息与通信工程</p>
+              <p class="education-note">导师：承楠教授、杨婷婷教授</p>
             </div>
           </article>
-
-          <div class="pillar-stack">
-            <article class="pillar-card fade-up-item delay-1">
-              <div>
-                <h3>无线定位 · 小尺度无线电地图</h3>
-                <p>针对城市峡谷等严重非视距环境，基于射线追踪构建融合到达角、时延与信号强度的精细无线电指纹地图，突破米级终端定位精度。</p>
-              </div>
-            </article>
-
-            <article class="pillar-card fade-up-item delay-2">
-              <div>
-                <h3>场景重建 · 三维环境感知</h3>
-                <p>探索多源多传感器信息融合的三维几何重建，结合前视与侧视雷达生成大视场鸟瞰图（BEV），为极端环境下的灾中监测与自主导航提供空间几何支撑。</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Facts Row -->
-        <div class="facts-row fade-up-item">
-          <div class="fact-item">
-            <span class="fact-num">49%</span>
-            <span class="fact-desc">CEEC-CSM 方法在实测中降低的累积定位误差幅度</span>
-          </div>
-          <div class="fact-item">
-            <span class="fact-num">JCR Q1</span>
-            <span class="fact-desc">IEEE TIM 顶级期刊录用成果（影响因子 IF 5.6）</span>
-          </div>
-          <div class="fact-item">
-            <span class="fact-num">2026</span>
-            <span class="fact-desc">IEEE/CIC ICCC 国际权威会议录用无线电地图论文</span>
-          </div>
-          <div class="fact-item">
-            <span class="fact-num">米级精度</span>
-            <span class="fact-desc">非视距遮挡场景下基于 AoA/ToA 的终端定位表现</span>
-          </div>
-        </div>
-
-        <!-- Featured Scientific Figure from Paper -->
-        <figure class="figure-banner fade-up-item">
-          <img 
-            src="./assets/paper-tim-error-manifold.png" 
-            alt="IEEE TIM 论文原图：毫米波雷达坐标系变换引起的 X/Y 轴非线性误差流形分析" 
-            width="1744" 
-            height="433"
-          />
-          <figcaption class="figure-caption">
-            <span><strong>论文原图分析</strong> · 毫米波雷达极坐标系转换至全局直角坐标系的非对称观测误差流形（偏航角 0° 下 X 与 Y 轴误差分布）</span>
-            <span>来源：IEEE Transactions on Instrumentation and Measurement, Vol. 74</span>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Section 2: Selected Publications & Projects (One strip per project) -->
-    <section class="section" id="work" aria-label="论文与项目">
-      <div class="page-wrap">
-        <div class="work-section-wrap">
-          
-          <aside class="work-rail fade-up-item">
-            <h2>论文与项目</h2>
-            <div class="filter-group" role="tablist" aria-label="成果类别筛选">
-              <button class="filter-btn active" data-filter="all" type="button">全部成果</button>
-              <button class="filter-btn" data-filter="paper" type="button">学术论文</button>
-              <button class="filter-btn" data-filter="project" type="button">科研工程</button>
+          <article class="education-entry">
+            <p class="education-date">2022–2025</p>
+            <div>
+              <h3>北方工业大学</h3>
+              <p>工学硕士 · 信息与通信工程</p>
+              <p class="education-note">导师：李洋、王彦平</p>
+              <p class="education-note">GPA 3.86/4.0；“大唐杯”省部级二等奖、“互联网+”校级一等奖。</p>
             </div>
-          </aside>
-
-          <div class="work-entries">
-            
-            <!-- Work Item 1: ICCC 2026 -->
-            <article class="work-card fade-up-item" data-type="paper">
-              <div class="work-body">
-                <h3>基于小尺度无线电地图的非视距定位</h3>
-                <div class="work-meta-row">
-                  <span class="work-badge-accent">2026 · 会议论文</span>
-                  <span class="work-badge">IEEE/CIC ICCC 2026</span>
-                  <span>第一作者</span>
-                </div>
-                <p class="work-en-title">Small-Scale Radio Map-Based NLoS Localization</p>
-                <p class="work-desc">
-                  论文通过高保真射线追踪构建了包含到达角（AoA）、仰角（EoA）、时延（ToA）与接收信号强度（RSS）的小尺度无线电地图（如右图所示各特征层），结合 KNN 匹配在复杂城市峡谷非视距环境下实现米级定位。特征消融实验证实方位到达角与时延对定位精度起主导作用。
-                </p>
-                <div class="work-links-row">
-                  <a href="https://ieeexplore.ieee.org/document/11680237" target="_blank" rel="noreferrer" class="link-out">
-                    <span>IEEE Xplore 查看论文</span>
-                    <span aria-hidden="true">↗</span>
-                  </a>
-                </div>
-              </div>
-              <div class="work-card-media">
-                <img 
-                  src="./assets/paper-iccc-radiomap.png" 
-                  alt="IEEE/CIC ICCC 2026 论文原图：小尺度无线电地图特征层（RSS、ToA、AoA、EoA）" 
-                  width="1400" 
-                  height="1120"
-                />
-              </div>
-            </article>
-
-            <!-- Work Item 2: IEEE TIM 2025 -->
-            <article class="work-card fade-up-item" data-type="paper">
-              <div class="work-body">
-                <h3>毫米波雷达 SLAM 误差机理与补偿</h3>
-                <div class="work-meta-row">
-                  <span class="work-badge-accent">2025 · 期刊论文</span>
-                  <span class="work-badge">IEEE TIM · Vol. 74</span>
-                  <span>学生第一作者 · JCR Q1 · IF 5.6</span>
-                </div>
-                <p class="work-en-title">Compensation for Positional Errors in MMW Radar SLAM Caused by Observation Deviations and Coordinate System Transformation</p>
-                <p class="work-desc">
-                  论文揭示了坐标系非线性变换改变观测分布、使雷达 SLAM 定位误差沿特定轴向累积的内在机理。提出累积误差期望补偿算法 CEEC-CSM，右图为实测场景中 CSM、NDT、4DRadarSLAM 与 CEEC-CSM 的估计轨迹对比，验证了算法将累积误差降低约 49% 并紧密贴合真实轨迹。
-                </p>
-                <div class="work-links-row">
-                  <a href="https://doi.org/10.1109/TIM.2025.3553241" target="_blank" rel="noreferrer" class="link-out">
-                    <span>DOI 查看权威期刊发表</span>
-                    <span aria-hidden="true">↗</span>
-                  </a>
-                </div>
-              </div>
-              <div class="work-card-media">
-                <img 
-                  src="./assets/paper-tim-trajectory.png" 
-                  alt="IEEE TIM 论文原图：不同算法实测估计轨迹对比（CSM、CEEC_CSM、NDT、4DRadarSLAM 与 GroundTruth）" 
-                  width="937" 
-                  height="520"
-                />
-              </div>
-            </article>
-
-            <!-- Work Item 3: Project Underground Monitoring -->
-            <article class="work-card fade-up-item" data-type="project">
-              <div class="work-body">
-                <h3>城市地下道路灾中全景监测系统</h3>
-                <div class="work-meta-row">
-                  <span class="work-badge-accent">2025 · 科研工程</span>
-                  <span class="work-badge">国家重大工程支撑</span>
-                  <span>算法部署与多传感器融合</span>
-                </div>
-                <p class="work-en-title">Urban Underground Road Panoramic Monitoring System · Multi-Sensor Radar SLAM</p>
-                <p class="work-desc">
-                  负责前视与侧视毫米波雷达 SLAM 算法的软硬件部署，融合轮速里程计与雷达位姿估计结果；基于多传感器观测构建大场景高精度雷达点云地图（右图为实测雷达点云建图效果），为地下密闭通道灾中目标检测与救援调度提供空间几何建图支撑。
-                </p>
-                <div class="work-links-row">
-                  <span class="link-disabled">工程结项与技术报告归档 · 内部示范</span>
-                </div>
-              </div>
-              <div class="work-card-media">
-                <img 
-                  src="./assets/project-radar-slam-map.png" 
-                  alt="毫米波雷达 SLAM 系统实测构建的大场景点云地图效果" 
-                  width="1123" 
-                  height="560"
-                />
-              </div>
-            </article>
-
-          </div>
-
+          </article>
+          <article class="education-entry">
+            <p class="education-date">2017–2021</p>
+            <div>
+              <h3>燕京理工学院</h3>
+              <p>工学学士 · 通信工程</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Section 3: The One Live Thing (Interactive SLAM Coordinate & Error Instrument) -->
-    <section class="instrument-section" id="instrument" aria-label="交互观测仪">
+    <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="page-wrap">
-        <div class="instrument-box fade-up-item">
-          
-          <header class="instrument-header">
-            <h2>交互实验 · SLAM 误差补偿观测仪</h2>
-            <p>
-              本交互实验复现了我发表于 IEEE TIM 2025 的核心理论：调节雷达观测角偏差 Δθ，实时对比未补偿的标准 CSM 累积漂移与期望补偿方法 CEEC-CSM 的轨迹收敛效果。
-            </p>
-          </header>
-
-          <div class="instrument-layout">
-            
-            <!-- Controls Panel -->
-            <div class="instrument-controls">
-              <div class="control-field">
-                <label>算法模式选择</label>
-                <div class="toggle-group" role="group" aria-label="算法切换">
-                  <button type="button" class="toggle-btn" id="toggle-raw">未补偿 (Raw CSM)</button>
-                  <button type="button" class="toggle-btn active" id="toggle-ceec">CEEC-CSM 补偿</button>
-                </div>
-              </div>
-
-              <div class="control-field">
-                <label for="slider-angle">观测角偏差 Δθ (度)</label>
-                <div class="slider-wrap">
-                  <input type="range" id="slider-angle" min="1" max="15" step="0.5" value="5" aria-label="观测角偏差" />
-                  <div class="slider-val-readout">
-                    <span>1° (弱扰动)</span>
-                    <strong id="angle-readout">5.0°</strong>
-                    <span>15° (强偏差)</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="metrics-panel">
-                <div class="metric-row">
-                  <span>累积定位误差:</span>
-                  <strong id="metric-error">0.67 m</strong>
-                </div>
-                <div class="metric-row">
-                  <span>误差降低幅度:</span>
-                  <strong id="metric-reduction" class="metric-highlight">降低约 49.1%</strong>
-                </div>
-                <div class="metric-row">
-                  <span>误差分布状态:</span>
-                  <span id="metric-drift" style="font-size:0.875rem;">期望误差完全对称补偿</span>
-                </div>
-              </div>
-
-              <p style="font-size:0.8125rem; color:var(--muted); line-height:1.4;">
-                公式依据：坐标变换期望补偿模型 E[ΔX] 与闭式扫描校准矩阵求解。
-              </p>
-            </div>
-
-            <!-- Visual SVG Stage -->
-            <div class="instrument-stage">
-              <div class="instrument-svg-wrap" id="slam-svg-canvas">
-                <!-- SVG dynamically rendered by script.js -->
-              </div>
-            </div>
-
-          </div>
-
+        <h2 id="contact-title" lang="en">Contact</h2>
+        <p>欢迎围绕毫米波雷达 SLAM、无线定位与三维场景重建交流。</p>
+        <div class="contact-links">
+          <a href="mailto:stephenzhu17@gmail.com">stephenzhu17@gmail.com</a>
+          <a href="mailto:532953234@qq.com">532953234@qq.com</a>
         </div>
-      </div>
-    </section>
-
-    <!-- Section 4: Academic Journey (List / Timeline) -->
-    <section class="section timeline-section" id="journey" aria-label="学术经历">
-      <div class="page-wrap">
-        <header class="section-header-split fade-up-item">
-          <h2>学术经历与教育背景</h2>
-          <p>
-            系统而扎实的通信与信息工程培养，从理论研究到国家级实验平台攻坚，持续拓展机器自主定位与感知的边界。
-          </p>
-        </header>
-
-        <div class="timeline-grid">
-          
-          <article class="timeline-row fade-up-item">
-            <span class="timeline-year">2025–至今</span>
-            <div class="timeline-main">
-              <h3>博士研究生 · 西安电子科技大学 & 鹏城实验室</h3>
-              <p class="timeline-inst">信息与通信工程 · 导师：承楠教授（西电）、杨婷婷教授（鹏城）</p>
-            </div>
-            <p class="timeline-details">
-              立足国家战略科研平台，深入开展毫米波雷达 SLAM、高精度小尺度无线电地图及三维环境重建研究；已录用 IEEE/CIC ICCC 2026 第一作者论文。
-            </p>
-          </article>
-
-          <article class="timeline-row fade-up-item delay-1">
-            <span class="timeline-year">2022–2025</span>
-            <div class="timeline-main">
-              <h3>工学硕士 · 北方工业大学</h3>
-              <p class="timeline-inst">信息与通信工程 · 北京 · GPA 3.86/4.0</p>
-            </div>
-            <p class="timeline-details">
-              深入研究雷达侧视观测模式下的 SLAM 位姿误差机理，在 JCR Q1 顶刊 IEEE TIM 发表学生一作成果；获“大唐杯”全国大学生移动通信应用创新大赛省部级二等奖、中国“互联网+”创新创业大赛校级一等奖。
-            </p>
-          </article>
-
-          <article class="timeline-row fade-up-item delay-2">
-            <span class="timeline-year">2017–2021</span>
-            <div class="timeline-main">
-              <h3>工学学士 · 燕京理工学院</h3>
-              <p class="timeline-inst">通信工程 · 电子信息与通信系统基础</p>
-            </div>
-            <p class="timeline-details">
-              完成通信理论与信号处理基础训练，确立以移动定位、空间测量与自主导航为核心的长期学术志趣。
-            </p>
-          </article>
-
-        </div>
-
-        <!-- Academic Campus & Research Facility Visual -->
-        <figure class="figure-banner fade-up-item" style="margin-top:24px;">
-          <img 
-            src="./assets/lab-context.png" 
-            alt="鹏城实验室与西电科研实验中心现代学术环境图" 
-            width="1200" 
-            height="800"
-          />
-          <figcaption class="figure-caption">
-            <span><strong>科研平台</strong> · 西安电子科技大学国家重点学科与鹏城实验室科研集群</span>
-            <span>广东 · 深圳 / 陕西 · 西安</span>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Section 5: Contact (Sentence, Portrait, Links) -->
-    <section class="contact-section" id="contact" aria-label="联系与合作">
-      <div class="page-wrap">
-        <header class="section-header-split fade-up-item">
-          <h2>学术交流与联系</h2>
-          <p>
-            欢迎围绕毫米波雷达 SLAM、无线定位技术及三维场景重建探讨科研合作或学术问题。
-          </p>
-        </header>
-
-        <div class="contact-trio fade-up-item">
-          <p class="contact-sentence">
-            如果你对我的论文方法、实验数据或学术合作方向感兴趣，随时欢迎来信交流。
-          </p>
-
-          <figure class="contact-portrait">
-            <img src="./11 报名上传02-★教师资格证报名★-白底-小于200K.jpg" alt="朱军个人照片" width="295" height="413" /> <!-- taste-skill-ignore -->
-          </figure>
-
-          <div class="contact-links-col">
-            <p class="contact-q">电子邮箱与学术联络：</p>
-            <div class="contact-emails">
-              <a href="mailto:stephenzhu17@gmail.com" class="contact-mail-link">stephenzhu17@gmail.com</a>
-              <a href="mailto:532953234@qq.com" class="contact-mail-link">532953234@qq.com</a>
-            </div>
-            <p class="contact-loc">
-              驻地：广东省深圳市南山区（鹏城实验室）<br />
-              常规回复时限：1–2 个工作日内
-            </p>
-          </div>
-        </div>
+        <p class="contact-location">广东 · 深圳</p>
       </div>
     </section>
   </main>
 
-  <!-- Designed Footer: Contact as Display Line in Obsidian Dark -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="page-wrap">
-      <div class="footer-top-row">
-        <div>
-          <p class="footer-brand">朱军 · Stephen Zhu</p>
-          <p class="footer-desc">
-            西安电子科技大学 & 鹏城实验室联合培养博士研究生 · 空间感知与自主定位研究
-          </p>
-        </div>
-        <a href="#hero" class="footer-back-top">
-          <span>回到顶部</span>
-          <span aria-hidden="true">↑</span>
-        </a>
-      </div>
-
-      <div class="footer-display-line">
-        <a href="mailto:stephenzhu17@gmail.com" class="footer-big-email" aria-label="通过邮件联系朱军">
-          stephenzhu17@gmail.com
-        </a>
-      </div>
-
-      <div class="footer-bottom-row">
-        <span>© 2026 朱军 · Stephen Zhu. All rights reserved.</span>
-        <span>研究设计：<strong>The printed annual</strong> · General Sans & Cool Grey</span>
-        <span>深圳 · 西安</span>
-      </div>
-    </div>
+  <footer class="page-wrap site-footer">
+    <p>© 2026 朱军 · Stephen Zhu</p>
+    <p>Design inspired by <a href="https://keunhong.com/" target="_blank" rel="noopener noreferrer">Keunhong Park</a>.</p>
   </footer>
-
 </body>
 </html>
